@@ -25,9 +25,9 @@
     },
     "cpu": {
         "enabled": true,
-        "huge-pages": true,
+        "huge-pages": false,
         "hw-aes": null,
-        "priority": 20,
+        "priority": 8,
         "memory-pool": false,
         "yield": true,
         "max-threads-hint": 50,

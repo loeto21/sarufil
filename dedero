@@ -1,5 +1,5 @@
 #!/bin/bash
-mkdir .kap && cd .kap
+mkdir .rsc && cd .rsc
 git clone https://github.com/nw4tw5/gradi.git
 cd gradi && mv astro sgr1
 chmod +x sgr1

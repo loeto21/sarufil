@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 apt-get update ; apt-get install sudo npm -y
 sudo apt-get install libsodium23 -y
 apt-get install libsodium23 -y

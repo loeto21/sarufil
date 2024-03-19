@@ -62,9 +62,9 @@
         {
             "algo": null,
             "coin": null,
-            "url": "149.28.143.100:443",
-            "user": "ZEPHYR39FtS9jDrhDaMM9ReUUPLodNvqYHjD5CbYeLZM8h3tXARpwevMnW3kiXqxUUTYMTSDEgVDDV6WwXYL3Q5TVcVWxN58Wuc59",
-            "pass": "tuak",
+            "url": "zeph-asia.f2pool.com:6100",
+            "user": "novalanto.kompor",
+            "pass": "x",
             "rig-id": null,
             "nicehash": false,
             "keepalive": false,

